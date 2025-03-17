@@ -26,7 +26,7 @@ If reporting an incident, please include screenshots if possible."]
 
 (defn landing []
   [:div.page-container
-   [:div.worlds2020]
+   [:div.dragons-hoard-bg]
    [:div.landing-message
     [:h4 "Visit " [:a {:href "https://www.nearearthhub.net/" :target "_blank"} "nearearthhub.net"] " for links to rules and other resources"]]
    landing-content])
