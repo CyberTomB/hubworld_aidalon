@@ -12,49 +12,50 @@
   [{:title (tr [:nav/welcome "Welcome"])
     :cls "landing"
     :route "/"}
-    {:title (tr [:nav/chat "Chat"])
-    :cls "chat"
-    :route "/chat"}
-   {:title (tr [:nav/cards "Cards"])
-    :cls "card"
-    :route "/cards"}
-   {:title (tr [:nav/deck-builder "Deck Builder"])
-    :cls "deckbuilder"
-    :route "/deckbuilder"}
-   {:title (tr [:nav/play "Play"])
-    :cls "play"
-    :route "/play"}
-   {:title (tr [:nav/help "Help"])
-    :cls "help"
-    :route "/help"}
-   {:title (tr [:nav/settings "Settings"])
-    :cls "settings"
-    :route "/account"
-    :show? :user}
-   {:title (tr [:nav/stats "Stats"])
-    :cls "stats"
-    :route "/stats"
-    :show? :user}
-   {:title (tr [:nav/about "About"])
-    :cls "about"
-    :route "/about"}
-   {:title (tr [:nav/tournaments "Tournaments"])
-    :cls "tournaments"
-    :route "/tournament"
-    :show? #(:tournament-organizer (:user %))}
-   {:title (tr [:nav/admin "Admin"])
-    :cls "admin"
-    :route "/admin"
-    :show? #(:isadmin (:user %))}
-   {:title (tr [:nav/users "Users"])
-    :cls "users"
-    :route "/users"
-    :show? #(or (:isadmin (:user %))
-                (:ismoderator (:user %)))}
-   {:title (tr [:nav/features "Features"])
-    :cls "features"
-    :route "/features"
-    :show? #(:isadmin (:user %))}])
+   ; {:title (tr [:nav/chat "Chat"])
+   ; :cls "chat"
+   ; :route "/chat"}
+   ;{:title (tr [:nav/cards "Cards"])
+   ; :cls "card"
+   ; :route "/cards"}
+   ;{:title (tr [:nav/deck-builder "Deck Builder"])
+   ; :cls "deckbuilder"
+   ; :route "/deckbuilder"}
+   ;{:title (tr [:nav/play "Play"])
+   ; :cls "play"
+   ; :route "/play"}
+   ;{:title (tr [:nav/help "Help"])
+   ; :cls "help"
+   ; :route "/help"}
+   ;{:title (tr [:nav/settings "Settings"])
+   ; :cls "settings"
+   ; :route "/account"
+   ; :show? :user}
+   ;{:title (tr [:nav/stats "Stats"])
+   ; :cls "stats"
+   ; :route "/stats"
+   ; :show? :user}
+   ;{:title (tr [:nav/about "About"])
+   ; :cls "about"
+   ; :route "/about"}
+   ;{:title (tr [:nav/tournaments "Tournaments"])
+   ; :cls "tournaments"
+   ; :route "/tournament"
+   ; :show? #(:tournament-organizer (:user %))}
+   ;{:title (tr [:nav/admin "Admin"])
+   ; :cls "admin"
+   ; :route "/admin"
+   ; :show? #(:isadmin (:user %))}
+   ;{:title (tr [:nav/users "Users"])
+   ; :cls "users"
+   ; :route "/users"
+   ; :show? #(or (:isadmin (:user %))
+   ;             (:ismoderator (:user %)))}
+   ;{:title (tr [:nav/features "Features"])
+   ; :cls "features"
+   ; :route "/features"
+    ;:show? #(:isadmin (:user %))}
+    ])
 
 (def history (Html5History.))
 

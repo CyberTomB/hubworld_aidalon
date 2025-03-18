@@ -56,12 +56,14 @@
      [:a.block-link {:on-click #(handle-logout %)} (tr [:menu/logout "Jack out"])]]]])
 
 (defn unlogged-menu []
-  [:ul
-   [:li
-    [:a {:href "" :data-target "#register-form" :data-toggle "modal"
-         :on-click (fn [] (.focus (js/$ "input[name='email']")))} "Sign up"]]
-   [:li
-    [:a {:href "" :data-target "#login-form" :data-toggle "modal"} "Login"]]])
+  ;TODO - Re-Implement
+  ;[:ul
+  ; [:li
+  ;  [:a {:href "" :data-target "#register-form" :data-toggle "modal"
+  ;       :on-click (fn [] (.focus (js/$ "input[name='email']")))} "Sign up"]]
+  ; [:li
+  ;  [:a {:href "" :data-target "#login-form" :data-toggle "modal"} "Login"]]]
+  )
 
 (defn check-username [value s]
   (go (let [response (<! (GET (str "/check-username/" value)))]
